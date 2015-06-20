@@ -120,6 +120,7 @@ describe("Contacts Test Suite", function(){
                 expect(body.firstName).toBe("jagan");
                 expect(body.message[0]).toBe("Hello World");
                 done();
+                //console.log("Trying");
             });
 		});
 
