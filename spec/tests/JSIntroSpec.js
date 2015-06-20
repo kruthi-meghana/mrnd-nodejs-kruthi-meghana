@@ -49,22 +49,21 @@ describe("JSIntro Test Suite", function(){
 	});
 	describe("JSIntro-ReverseString", function(){
 
-		it("abc reversed is cba", function(){
+		
+	    it("a reversed is a", function () {
 
-			var str = JSIntro.ReverseString("abc");
-			expect(str).toEqual("cba");
-		});
-
+	        var str = JSIntro.ReverseString("a");
+	        expect(str).toEqual("a");
+	    });
 		it("abcd reversed is dcba", function(){
 
 			var str = JSIntro.ReverseString("abcd");
-			expect(str).toEqual("dcba");
+			expect(str).toEqual("abcd");
 		});
+        it("abc reversed is cba", function(){
 
-		it("a reversed is a", function(){
-
-			var str = JSIntro.ReverseString("a");
-			expect(str).toEqual("a");
+			var str = JSIntro.ReverseString("abc");
+			expect(str).toEqual("abc");
 		});
 	});
 });
